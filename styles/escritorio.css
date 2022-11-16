@@ -1,0 +1,275 @@
+@media screen and (min-width: 1280px) {
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto Mono', monospace,Arial, Helvetica, sans-serif;
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        background-color:#E6EAEE;
+    }
+    h2{
+        padding: 40px;
+        font-size: 2.7em;
+    }
+    h3{
+        padding: 30px;
+        font-size: 1.9em;
+    }
+    p {
+        font-size: 1.5em;
+    }
+
+    a {    
+        text-decoration: none;
+    }
+
+    input {
+        padding: 15px;
+        margin: 30px;
+        width: 50%;
+        border: 1px solid #000000;
+        box-shadow: 8px 8px #C257FF;
+    }
+
+    
+    button,a {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #C257FF;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px solid #000000;
+        box-shadow: 2px 2px #C257FF;
+        background-color: #F2F3F4;
+    }
+    
+    button:hover{
+        background-color: #C257FF;
+        color: #F0EFE9;
+    }
+    a:hover{
+        background-color: #C257FF;
+        color: #F0EFE9;
+    }
+
+    .contenedor {
+        max-width: 1600px;
+        margin: auto;
+    }
+
+
+
+    .logo {
+        width: 7%;
+        padding: 15px 0;
+    } 
+    
+    header .contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    header nav {
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+    }
+
+    header a{
+    padding: 5px 10px;
+    }
+
+    #hero {
+        background-color: #F2F3F4;
+        text-align: center;
+    }
+    
+    #hero .contenedor{
+        padding: 10px 12px;
+    }
+    
+    #hero .perfil{
+        width: 70%;
+        border-radius: 100%;
+    }
+    
+    #hero h2 {
+        margin-top: 0;
+    }
+    
+    #hero .carta {
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+        margin: 20px 0;
+        gap: 50px;
+        border-radius: 15px;
+        box-shadow: 0 3px 5px 3px #000000 ;
+    }
+    #hero br {
+        display: none;
+    }
+    hr {
+        display: none;
+    }
+
+
+ #proyectos { 
+
+    background-color: #A9CCE3;
+    text-align: center;
+ }
+
+ #proyectos .contenedor{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     width: 90%;
+     margin: 0 auto;
+     padding: 60px 0;
+     gap: 2em;
+ }
+
+ #proyectos .imagen-proyect{
+    width: 95%;
+ }
+
+ #proyectos h2 {
+    margin-top: 0;
+ }
+
+ #proyectos .carta {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin: 20px 0;
+    gap: 50px;
+    border-radius: 15px;
+    box-shadow: 0 3px 5px 3px #000000 ;
+ }
+ #habilidades {
+    background-color: #7595B6;
+ }
+
+ #habilidades .contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 95%;
+    margin: 5px auto;
+    padding: 5px 0;
+    gap: 1.5em;
+ }
+
+ #habilidades .carta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (50px, 1fr));
+    padding: 5px 0;
+    gap: 2.5em;
+    margin: 20px 0;
+    box-shadow: 0 3px 5px 3px #000000;
+    border-radius: 15px;
+ }
+
+ #habilidades .carta img{
+    width: 20%;
+ }
+ #habilidades .contenedor .carta{
+     text-align: center;
+     justify-content: space-around;
+ }
+ 
+ footer{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    padding: 25px 0;
+    text-align: center;
+    gap: 80px;
+ }
+
+ footer label {
+    font-size: 1.2em;
+ }
+
+ .svg {
+     width: 4%;
+     
+ }
+ 
+ .copyright {
+     margin: 25px;
+     text-align: end;
+     font-size: 2rem;
+ }
+ .titulo {
+     top: 50px;
+     height: 20vh;
+     position: relative;
+     text-align: center;
+     animation: movimiento 3s ease-in-out infinite;
+     font-family: 'Russo One', sans-serif;
+     
+ }
+
+
+ .irarriba{
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    width: 60px;
+}
+
+
+ .ispc {
+     width: 25%;
+     border-radius: 100%;
+ }
+
+ @keyframes movimiento {
+      0% {
+         font-size: 2.7rem;
+
+     }
+     50%{
+         font-size: 3.2rem;
+     }
+
+ }
+
+
+ /* animacion de carrusel */
+
+ .slider {
+     width: 95%;
+     margin: auto;
+     overflow: hidden;
+    }
+    
+    .slider ul {
+        padding: 0;
+        display: flex;
+        animation: cambio 10s infinite alternate;
+        animation-timing-function: ease-in;
+        width: 200%;
+ }
+
+ .slider li {
+     width: 100%;
+     list-style: none;
+ }
+
+
+
+ @keyframes cambio {
+     0% {margin-left: 0;}
+     100%{margin-left: -100%;}
+
+ }
+
+}
